@@ -1,4 +1,3 @@
-// @ts-nocheck
 sap.ui.define([
     "sap/ui/base/ManagedObject",
     "sap/ui/core/Fragment"
@@ -22,7 +21,6 @@ sap.ui.define([
             },
 
             open: function () {
-
                 const oView = this._oView;
 
                 // create dialog lazily

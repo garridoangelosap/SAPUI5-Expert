@@ -1,14 +1,8 @@
 {
-  "inputs": [
-    {
-      "id": "UI5Version",
-      "type": "command",
-      "command": "sap.ux.appGenerator.ui5Version"
-    }
-  ],
+  "version": "0.2.0",
   "configurations": [
     {
-      "name": "integration",
+      "name": "SAPUI5",
       "cwd": "${workspaceFolder}/SAPUI5",
       "runtimeArgs": [
         "fiori",
@@ -27,10 +21,11 @@
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "env": {
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/Invoices/SAPUI5\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/Invoices/SAPUI5\"}",
+        "FIORI_TOOLS_UI5_VERSION": "",
+        "FIORI_TOOLS_UI5_URI": "https://ui5.sap.com",
+        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"path\":\"/V2\",\"destination\":\"Northwind\"}]"
       }
     }
-  ],
-  "compounds": [],
-  "version": "0.2.0"
+  ]
 }
